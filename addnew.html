@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="assets/addnew.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/addnew.css" />
+  <title>Add a new location</title>
+</head>
+
+<body>
+  <header id="topMenu2">
+    <img alt="logo" src="./images/logo.jpg">
+    <nav>
+      <a href="/">Homepage</a>
+      |
+      <a href="/about.html">About Me!</a>
+    </nav>
+  </header>
+  <header>
+    <h1>Here you can add more travel locations to your blog!</h1>
+  </header>
+  <form id="added">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Location name"><br><br>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" placeholder="Location"><br><br>
+
+    <label for="date">Date Visited:</label>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="image">Image URL:</label>
+    <input type="text" id="imageSrc" name="image" placeholder="Image URL"><br><br>
+
+    <label for="comments">Optional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write some cool text!"></textarea><br><br>
+
+    <button type="button" id="addButton">SAVE</button>
+  </form>
+
+  <script src="./src/addnew.js"></script>
+</body>
+
+</html>

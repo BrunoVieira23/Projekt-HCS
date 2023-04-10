@@ -1,0 +1,14 @@
+{
+  "name": "projekt",
+  "version": "1.0.0",
+  "description": "First project for HCS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}

@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(6, 235, 216);
+    background-image: url('/images/addbnew.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  p {
+    color: #fff;
+  }
+  
+  #topMenu2 img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  #topMenu2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 22px;
+  }
+  
+  header h1 {
+    font-size: 60px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #3c5d9a, #d393d1);
+    color: transparent;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+  }
+  
+  img {
+    border: 6px solid rgb(255, 166, 0);
+    border-radius: 6px;
+  }
+  
+  form#added {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 50%;
+    }
+    
+  
+    form#added label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+  
+    form#added input[type="text"],
+    form#added textarea,
+    form#added input[type="date"] {
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    
+    form#added textarea {
+      height: 100px;
+    }
+    
+  
+    form#added input[type="text"]#imageInput {
+      width: 70%;
+    }
+    
+  
+    form#added button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+  
+    form#added button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
