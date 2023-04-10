@@ -1,49 +1,49 @@
 body {
   background-color: black;
-  background-image: url('/images/about me.jpg');
+  background-image: url("/images/about me.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 p {
-  text-justify: auto;
-  color: rgb(255, 166, 0);
-  font-size: larger;
-  font-stretch: normal;
+  text-align: justify;
+  color: #ffa600;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 header h1 {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 500;
   background-image: linear-gradient(to left, #9a3c3c, #d3ad93);
   color: transparent;
   text-decoration-line: underline;
-  text-decoration-color:rgb(255, 166, 0);
+  text-decoration-color: #ffa600;
   text-align: center;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
-img {
-  border: 6px solid rgb(255, 166, 0);
-  border-radius: 6px;
-}
-
-#picture {
-  float: down;
+img.aboutPicture {
   display: block;
-  width: 100%;
-  margin-left: 1000px;
-  margin-right: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 6px solid #ffa600;
+  border-radius: 6px;
 }
 
 #topMenu3 img {
   width: 150px;
+  height: auto;
   border-radius: 50%;
+  border: 6px solid rgb(255, 166, 0);
 }
 
 #topMenu3 {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
   font-size: 22px;
+  padding: 20px;
 }

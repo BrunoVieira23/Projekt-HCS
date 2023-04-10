@@ -1,6 +1,5 @@
 body {
   background-color: teal;
-  background-image: url('/images/index.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,14 +21,16 @@ header h1 {
 
 #topMenu img {
   width: 150px;
+  height: auto;
   border-radius: 50%;
 }
 
 #topMenu {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
   font-size: 22px;
+  padding: 20px;
 }
 
 img {
