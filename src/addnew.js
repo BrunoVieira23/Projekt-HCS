@@ -1,7 +1,7 @@
 const nameText = document.getElementById("name");
 const locationInput = document.getElementById("location");
 const date = document.getElementById("date");
-const imageSrc = document.getElementById("imageSrc");
+const imageSrc1 = document.getElementById("picture");
 const comments = document.getElementById("comments");
 const addButton = document.getElementById("addButton");
 
@@ -9,19 +9,20 @@ let destinations = [
   {
     name: "Tokyo",
     location: "Japan",
-    date: 23 - 12 - 1999,
-    image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
-    comments: "This is was a great trip",
+    date: "1999-12-23",
+    imageSrc:
+    "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
+    comments: "This was a great trip",
   },
 ];
+
 
 addButton.addEventListener("click", function () {
   const newDestination = {
     name: nameText.value,
     location: locationInput.value,
     date: date.value,
-    image: imageSrc.value,
+    imageSrc: imageSrc1.value,
     comments: comments.value,
   };
 
@@ -42,10 +43,9 @@ function fillCardContainer() {
     const newCard = `
             <div class="card">
                 <img src="${destinations[i].image}">
-                <h2>${destinations[i].name}</h2>
-                <h3>${destinations[i].location}</h3>
-                <h3>${destinations[i].date}</h3>
-                <h3>${destinations[i].image}</h3>
+                <h2>${destinations[i].name}</p>
+                <p>${destinations[i].location}</p>
+                <p>${destinations[i].date}</p>
                 <p>${destinations[i].comments}</p>
             </div>`;
     cardContainer.innerHTML += newCard;
@@ -60,8 +60,6 @@ function saveToLocalStorage() {
 function loadFromLocalStorage() {
   console.log("loadingOne");
   const myJsonString = localStorage.getItem("destinations");
-  // if nothing was ever saved to LocalStorage don't replace with an empty Array
-  // keep the default 2 people, added at the top
   if (myJsonString) {
     console.log("loadingTwo");
     destinations = JSON.parse(myJsonString);
@@ -69,6 +67,5 @@ function loadFromLocalStorage() {
 }
 
 console.log("lalala");
-//window.location.href = "index.html";
 loadFromLocalStorage();
 fillCardContainer();

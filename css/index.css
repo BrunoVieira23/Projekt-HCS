@@ -39,9 +39,9 @@ img {
 }
 
 #mainContainer {
-  width: 900px;
+  width: auto;
   margin: 0 auto;
-  background-color: red;
+  background-color: transparent;
 }
 
 .cardContainer {
@@ -52,11 +52,11 @@ img {
 }
 
 .card {
-  width: 200px;
+  width: 500px;
   padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px grey;
+  background-color: rgb(255, 213, 2);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px grey;
 }
 
 .card img {
@@ -65,7 +65,7 @@ img {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 200px;
   box-shadow: 5px 5px 20px grey;
 }
 
