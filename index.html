@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/index.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>A weird travel blog</title>
+  </head>
+  <body>
+    <header id="topMenu">
+      <img alt="logo" src="./images/logo.jpg" />
+      <nav>
+        <a href="/addnew.html">Add New Location</a> |
+        <a href="/about.html">About Me!</a>
+      </nav>
+    </header>
+    <header>
+      <hr />
+      <h1>This is the world´s greatest travel blog</h1>
+      <hr />
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="./assets/index.ico" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/index.css" />
-  <title>A weird travel blog</title>
-</head>
-
-<body>
-  <header id="topMenu">
-    <img alt="logo" src="./images/logo.jpg" />
-    <nav>
-      <a href="/addnew.html">Add New Location</a> |
-      <a href="/about.html">About Me!</a>
-    </nav>
-  </header>
-  <header>
-    <hr />
-    <h1>This is the world´s greatest travel blog</h1>
-    <hr />
-  </header>
-
-  <div id="mainContainer">
-    <div class="cardContainer">
-      <div class="card">
-        <img src="bleh.jpg" alt="Example Image">
-        <h2>Name</h2>
-        <p>Location</p>
-        <p>Date</p>
-        <p>Optional comments</p>
+    <div id="mainContainer">
+      <div class="cardContainer">
+        <div class="card">
+          <img src="" />
+          <h2>name</h2>
+          <p>location</p>
+          <p>date</p>
+          <p>comments</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="./src/index.js"></script>
-</body>
 
+    <div id="Weather">
+        <div class="weatherContainer">
+          <div class="cardW">
+            <h2>City Name:</h2>
+            <p>Location Name:</p>
+            <p>Current Temperature:</p>
+          </div>
+        </div>
+      </div>
+
+    <script src="./src/index.js"></script>
+    <script>
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+             alert('Card clicked!');
+        });
+      });
+    </script>
+  </body>
 </html>

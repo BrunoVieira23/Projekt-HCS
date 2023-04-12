@@ -2,10 +2,10 @@ let destinations = [
   {
     name: "Tokyo",
     location: "Japan",
-    date: 23 - 12 - 1999,
+    date: "23-12-1999",
     image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
-    comments: "This is was a great trip",
+    "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
+    comments: "This was a great trip",
   },
 ];
 
@@ -17,15 +17,15 @@ function fillCardContainer() {
     const newCard = `
             <div class="card">
                 <img src="${destinations[i].image}">
-                <h2>${destinations[i].name}</h2>
-                <h3>${destinations[i].location}</h3>
-                <h3>${destinations[i].date}</h3>
-                <h3>${destinations[i].image}</h3>
+                <h2>${destinations[i].name}</p>
+                <p>${destinations[i].location}</p>
+                <p>${destinations[i].date}</p>
                 <p>${destinations[i].comments}</p>
             </div>`;
     cardContainer.innerHTML += newCard;
   }
 }
+
 
 function saveToLocalStorage() {
   const myJsonString = JSON.stringify(destinations);
@@ -44,6 +44,6 @@ function loadFromLocalStorage() {
 }
 
 console.log("lalala");
-//window.location.href = "index.html";
+
 loadFromLocalStorage();
 fillCardContainer();

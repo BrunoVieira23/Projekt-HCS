@@ -1,7 +1,7 @@
 const nameText = document.getElementById("name");
 const locationInput = document.getElementById("location");
 const date = document.getElementById("date");
-const imageSrc1 = document.getElementById("picture");
+const imageSrc = document.getElementById("picture");
 const comments = document.getElementById("comments");
 const addButton = document.getElementById("addButton");
 
@@ -9,20 +9,19 @@ let destinations = [
   {
     name: "Tokyo",
     location: "Japan",
-    date: "1999-12-23",
-    imageSrc:
+    date: "23-12-1999",
+    image:
     "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
     comments: "This was a great trip",
   },
 ];
-
 
 addButton.addEventListener("click", function () {
   const newDestination = {
     name: nameText.value,
     location: locationInput.value,
     date: date.value,
-    imageSrc: imageSrc1.value,
+    image: imageSrc.value,
     comments: comments.value,
   };
 
